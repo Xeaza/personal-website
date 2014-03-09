@@ -1,0 +1,4705 @@
+/*
+	COLORS
+ 
+	Dark Blue 		#222438
+	Turquoise		#0DA4B5
+	Dark Purple	 	#410573
+	red  Hi-lite	#C70455
+	Light Green		#7efa73
+	
+	resume must be at http://www.taylorwrightsanson.com/techresume.pdf;
+*/
+
+/*html, body {
+	width: 100%;
+}*/
+
+ta {
+	font-family: AvenirNext-Heavy;
+}
+y {
+	font-family: AvenirNext-Bold;
+}
+l {
+	font-family: AvenirNext-DemiBold;
+}
+o {
+	font-family: AvenirNext-Medium;
+}
+r {
+	font-family: AvenirNext-Regular;
+}
+
+body {
+	background: #222438;
+	font-family: AvenirNext-Medium;
+	/*font-weight: bold;*/
+	/*font-size: 20px;*/
+	text-align: center;
+	visibility: hidden;
+}
+
+#bodyDeveloper {
+	background: white;
+}
+
+#logo {
+	font-size: 3.1em;
+	margin: 18px 0 0 8%;
+	text-align: left;
+	display: inline-block;
+	float: left;
+}
+
+#lineMenu {
+	display: none;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	height: 75px;
+	background-color: #fff;
+
+	display: block;
+
+	-webkit-box-shadow:  0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow:  0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom HTML tag I made to add stroke to individual letters/words if needed*/
+/*stroke {
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}*/
+
+p {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #0DA4B5;
+}
+
+a:hover {
+	color: #C70455;
+}
+
+nav ul {
+	text-align: center;
+	margin: 32px 0 0 0;
+	display: inline-block;
+	float: left;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav li a {
+	text-decoration: none;
+	font-size: 2em;
+	display: inline-block;
+	color: #0DA4B5;
+
+}
+
+nav li a:hover em, #logo a:hover em{
+	color:#410573;
+}
+
+nav li a:hover, #logo a:hover{
+	color: #0DA4B5;
+	text-shadow: 1px 0px 1px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=0);
+}
+
+.logo {
+	font-size: 1.5em;
+}
+
+.starIcons {
+	max-height: 17px;
+	margin: 0 5px 0 5px;
+}
+
+
+
+#home { 
+	background: url(../images/blueBlur.jpg) 50% 0 no-repeat fixed; 
+	background-size: 100%;
+	height: 1000px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    /*background-size: cover;*/
+    overflow: hidden;
+}
+
+	#home article { 
+	
+	width: 50%;
+	position: absolute; 
+	/*text-indent: -9999px; */
+	top: 200px; 
+	text-align: left;
+	font-size: 24px;
+	margin: 100px 0px 0px 3%;
+	height: 180px !important;
+	}
+
+	#home article p {
+		background-color:rgba(20,20,20,0.9);
+		padding: 15px 0px 15px 15px;
+		color: #0DA4B5;
+		text-shadow:0 2px 1px #000;
+		width: 100%;
+	}
+
+#about { 
+	background: url(../images/grad.jpg) 50% 0 no-repeat fixed; 
+	background-size: 100%;
+	height: 850px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 100%; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+	#about article { 
+	/*background: url("../images/parallax.png") no-repeat scroll center top transparent; */
+	height: auto; 
+	position: relative; 
+	top: 291px; 
+	width: 40%; 
+
+	margin-left: 56%;
+	color: #0DA4B5;
+	text-shadow:0 2px 1px #000;
+	font-size: 24px;
+	text-align: left;
+	background-color:rgba(20,20,20,0.9);
+	padding: 15px 0px 15px 15px;
+	}
+
+	#about #quote {
+		display: none;
+		width: 420px;
+		background-color:rgba(20,20,20,0.9);
+		margin: 200px 0px 0px 3%;
+		padding: 5px;
+		text-align: left;
+		color: #C70455;
+		font-size: 24px;
+	}
+
+	#about article #button {
+		text-decoration: none;
+		color: #C70455;
+	}
+
+.resumeLinks {
+	/*margin-top: 25px;*/
+	display: block;
+	text-align: center;
+}
+
+.resumeButton {
+/*  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;*/
+  width: 30%;
+  min-width: 195px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0DA4B5;
+  padding: 10px 20px 10px 20px;
+  margin: 14px 0 0 0;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.resumeButton:hover {
+  background: #410573;
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------*/
+/* CSS for Developer & Designer page ---------------------------------- */
+#developerWrapper {
+	background: url(../images/computerbackground.jpg) no-repeat;
+	/*background-color: rgb(146,146,146);*/
+	background-size: 100%;
+	max-width: 1501px;
+	height: 798px;
+	margin-top: -0.4%;
+}
+
+#web-work {
+	/*background: purple;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: right;
+	height: 504px;
+	width: 56%;
+	margin: 11.9% 11.6% 0px 0px;
+}
+
+#web-work h1 {
+	display: none;
+}
+
+
+.background1 {
+	background: url(../images/sdil.jpg);
+}
+
+.background2 {
+	background: url(../images/odyssey.jpg);
+}
+
+/*.background3 {
+	background: url(../images/robinAntalekDemo.png);
+}*/
+
+
+/* Menu for web work I've done. */
+.menu {
+	float: left;
+	text-align: left;
+	margin: 1.2% 0px 0 1%;
+	padding: 0;
+	width: 100%;
+}
+
+.menu li {
+	display:inline;
+    margin:0 0 0 3%;
+}
+
+.menu li a {
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	padding: 0.3% 0 0 5%;
+	font-size: 11px;
+	display: inline-block;
+}
+
+.menu li a:hover{
+	color: #C70455;
+	/*text-shadow: 1px 0px 1px #000000;*/
+    /*filter: dropshadow(color=#000000, offx=1, offy=0);*/
+}
+
+.selected {
+	color: #C70455 !important;
+}
+
+#iphoneWork {
+	background: url(../images/iPhoneBackground.jpg) no-repeat;	
+	background-size: 100%;
+	float: left;
+	height: 549px;
+	width: 18.1%;
+	margin: 14.4% 0 0 7.6%;
+}
+
+#iphoneWork h1 {
+	display: none;
+}
+
+#clock {
+	color: white;
+	margin: 0.2% 0 0 8%;
+	font-size: 9.5px;
+	position: absolute;
+	z-index: 2;
+}
+
+#smirkus-app {
+	/*background: pink;*/
+	width: 20%;
+	height: 10%;
+	margin: 153% 0 0 0%;
+	display: inline-block;
+}
+
+#cowDuck {
+	/*background:yellow;*/
+	width: 20%;
+	height: 10%;
+	margin-left: 2%;
+	display: inline-block;
+}
+
+#smirkusapp-discription {
+	position: absolute;
+	background: url(../images/smirkusAppbg.jpg) no-repeat;
+	background-size: 100%;
+	width: 18.1%;
+	height: 60%;
+	max-height: 482px;
+	margin-top: 2px;
+	/* use overflow: auto to have scrollabel text */
+	overflow: hidden;
+	z-index: -99;
+}
+
+#fitinSmirkusApp {
+	margin: 45% 0 0 1.3%;
+	overflow: auto;
+	height: 63%;
+}
+
+#fitinSmirkusApp span {
+	display: inline-block;
+	text-align: left;
+	margin-top: 1%;
+}
+
+#cowduckapp-discription {
+	position: absolute;
+	background: url(../images/cowDuckbg.jpg) no-repeat;
+	background-size: 100%;
+	width: 18.1%;
+	height: 60%;
+	max-height: 482px;
+	/*overflow: auto;*/
+	z-index: -99;
+}
+
+#fitinCowDuckApp {
+	margin: 24% 0 0 1.3%;
+	height: 85%;
+	overflow: auto;
+	color: white;
+}
+
+#cowduckImage {
+	background: url(../images/cowduck.jpg) no-repeat;
+	background-size: 100%;
+	height: 116%;
+}
+
+#fitinCowDuckApp img {
+	display: none;
+}
+
+#iPhone-home-button {
+	/*background: green;*/
+	width: 20%;
+	height: 9%;
+	margin: 7% 0 0 40%;
+	display: block;
+}
+
+.ribbon-wrapper-computer {
+  width: 18%;
+  max-width: 259px;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 73.8%;
+  margin: 8.5% 0 0 0;
+}
+
+.ribbon-computer {
+  font: bold 15px Sans-Serif;
+  text-align: center;
+  /*text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;*/
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 5% 0;
+  margin: 27% 0 0 0;
+  right: -6.4%;
+  width: 117%;
+  background-color: #C70455;
+  /*background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); */
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-computer:before, .ribbon-computer:after {
+  content: "";
+  border-top:   3px solid #410573;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-computer:before {
+  left: 0;
+}
+.ribbon-computer:after {
+  right: 0;
+}
+
+.ribbon-wrapper-iphone {
+  width: 20%;
+  max-width: 287px;
+  height: 204px;
+  overflow: hidden;
+  position: absolute;
+  margin: 7.9% 0 0 5.9%;
+  z-index: 15;
+}
+
+.ribbon-iphone {
+  font: bold 15px Sans-Serif;
+  text-align: center;
+  /*text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;*/
+  -webkit-transform: rotate(315deg);
+  -moz-transform:    rotate(315deg);
+  -ms-transform:     rotate(315deg);
+  -o-transform:      rotate(315deg);
+  position: relative;
+  padding: 5% 0;
+  margin: 21% 0 0 0;
+  right: 19.6%;
+  width: 97%;
+  background-color: #C70455;
+  /*background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); */
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-iphone:before, .ribbon-iphone:after {
+  content: "";
+  border-top:   3px solid #410573;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-iphone:before {
+  left: 0;
+}
+.ribbon-iphone:after {
+  right: 0;
+}
+
+.simple-demo, .mobile-demo {
+	visibility: visible;
+}
+
+.simple-demo #content-wrapper {
+	height: 1600px;
+	padding-top: 400px;
+}
+
+/* -----------------------------------------------------------------*/
+/* CSS for circus performer page */
+
+/*Need this stuff to have the in-progress page work right*/
+.comingSoon { 
+	padding-top: 100px; 
+}
+
+#videoHolder {
+	max-height: 590;
+	max-width: 950;
+	margin: 5px auto 50px auto;
+}
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto; 
+} 
+/* -----------------------------------------------------------------*/
+/* CSS for artist page */
+
+#artistWrapper-inProgress {
+	background: url(../images/stained.jpg) no-repeat;
+	background-size: 1436px 1099px;
+	height: 889px;
+	margin-top: -144px;
+}
+
+#artistWrapper-inProgress-div {
+	background-color:rgba(20,20,20,0.9);
+	width: 50%;
+  	height: 12%;
+  	overflow: auto;
+  	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* -----------------------------------------------------------------*/
+/* CSS for you name it page */
+
+#youNameIt-wrapper {
+	height: 900px;
+	background: url(../images/comingSoon.jpg) no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+#youNameIt-wrapperDiv {
+	background-color:rgba(20,20,20,0.9);
+	width: 50%;
+  	height: 6%;
+  	overflow: auto;
+  	margin: 137px auto auto auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+/* CSS for the bottom social bar*/
+.socialBar {
+	height:50px;
+	background: #320145;
+	position: relative;
+	/* Uncomment this to make the bottom bar stick to the bottom
+	and not go out of sight*/
+	/*width: 100%;
+	position: fixed;
+	bottom: 0;*/
+}
+
+.socialButtons li {
+	display: inline-block;
+	margin: 9px 10px 0 10px;
+}
+
+.socialButtons li a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	/*border-radius: 50%;*/
+}
+
+.linkedinIcon {
+	background: url(../images/linkedin.svg);
+	background-size: 100%;
+}
+
+.linkedinIcon:hover {
+	background: url(../images/linkedinHover.svg);
+	background-size: 100%;
+}
+.twitterIcon {
+	background: url(../images/twitter.svg);
+	background-size: 100%;
+}
+.twitterIcon:hover {
+	background: url(../images/twitterHover.svg);
+	background-size: 100%;
+}
+.instagramIcon {
+	background: url(../images/instagram.svg);
+	background-size: 100%;
+}
+.instagramIcon:hover {
+	background: url(../images/instagramHover.svg);
+	background-size: 100%;
+}
+.mailIcon {
+	background: url(../images/mail.svg);
+	background-size: 100%;
+}
+.mailIcon:hover {
+	background: url(../images/mailHover.svg);
+	background-size: 100%;
+}
+
+.resumeIcon {
+	background: url(../images/resumelink.svg);
+	background-size: 100%;
+}
+
+.resumeIcon:hover {
+	background: url(../images/resumelinkHover.svg);
+	background-size: 100%;
+}
+
+@media (min-width: 1510px) {
+	.ribbon-wrapper-computer {
+	  left: 1114px;
+	  margin-top: 130px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 119px 0 0 87px;
+	}
+
+	#smirkusapp-discription {
+		max-width: 272px;
+	}
+
+	#cowduckapp-discription {
+		max-width: 272px;
+		height: 60%;
+	}
+}
+@media (max-width: 1510px) {
+	.ribbon-wrapper-computer {
+	  left: 73.8%;
+	}
+
+	#smirkusapp-discription {
+		max-width: 272px;
+	}
+
+	#cowduckapp-discription {
+		max-width: 272px;
+	}
+}
+@media (max-width:1427px) {
+
+	#smirkusapp-discription {
+		height: 459px;
+	}
+	#fitinSmirkusApp {
+		height: 65%;
+	}
+
+	#cowduckapp-discription {
+		height: 459px;
+	}
+}
+
+@media (max-width:1407px) {
+
+	#smirkusapp-discription {
+		height: 451px;
+	}
+	#fitinSmirkusApp {
+		height: 65%;
+	}
+
+	#cowduckapp-discription {
+		height: 451px;
+	}
+}
+
+@media (max-width:1394px) {
+
+	#smirkusapp-discription {
+		height: 447px;
+	}
+
+	#fitinSmirkusApp {
+		height: 64%;
+	}
+
+	#cowduckapp-discription {
+		height: 447px;
+	}
+
+	#fitinCowDuckApp {
+		height: 83%;
+	}
+
+	.menu li {
+    	margin:0 0 0 2.8%;
+	}
+}
+
+@media (max-width: 1383px) {
+	#logo {
+		margin: 18px 0 0 7%;
+	}
+}
+
+@media (max-width:1365px) {
+
+	#logo {
+		margin: 18px 0 0 6%;
+	}
+
+	/* Home */
+	#home {
+		height: 1050px;
+	}
+
+	/* Developer & Designer */
+	#smirkusapp-discription {
+		height: 439px;
+	}
+
+	#fitinSmirkusApp {
+		height: 63%;
+	}
+
+	#cowduckapp-discription {
+		height: 439px;
+	}
+
+	#fitinCowDuckApp {
+		height: 84%;
+	}
+
+	.menu li {
+    	margin:0 0 0 2.6%;
+	}
+}
+
+@media (max-width: 1292px) {
+	#logo {
+		float: inherit;
+		margin-top:4px;
+	}
+
+	nav {
+		height: 90px;
+	}
+
+	nav ul {
+		display: block;
+		text-align: center;
+		float: inherit;
+		margin: 0 0 0 0;
+	}
+}
+
+@media (max-width:1275px) {
+	/* Home */
+
+
+	/* Developer & Designer */
+
+	#smirkusapp-discription {
+		height: 423px;
+	}
+
+	#fitinSmirkusApp {
+		height: 62%;
+	}
+
+	#cowduckapp-discription {
+		height: 423px;
+	}
+
+	#fitinCowDuckApp {
+		height: 82%;
+	}
+
+	.menu {
+		margin: 1% 0 0 1%;
+	}
+
+	.menu li {
+    	margin:0 0 0 2.3%;
+	}
+}
+
+@media (max-width:1245px) {
+
+	/*#logo {
+		float: inherit;
+		margin-top:4px;
+	}
+
+	nav {
+		height: 90px;
+	}
+
+	nav ul {
+		display: block;
+		text-align: center;
+		float: inherit;
+		margin: 0 0 0 0;
+	}*/
+
+	/* Home */
+
+	/* Developer & Designer */
+
+	#developerWrapper {
+		margin-top: 2%;
+	}
+
+	#smirkusapp-discription {
+		height: 410px;
+	}
+
+	#fitinSmirkusApp {
+		height: 62%;
+	}
+
+	#cowduckapp-discription {
+		height: 410px;
+	}
+
+	#fitinCowDuckApp {
+		height: 81%;
+	}
+}
+
+@media (max-width: 1233px) {
+	/* Home */
+	#home {
+		background-position: 50% 25px;
+	}
+}
+
+@media (max-width:1203px) {
+	#developerWrapper {
+		margin-top: 2.6%;
+	}
+}
+
+@media (max-width:1201px) {
+
+	/* Home */
+	#home {
+		background-position: 50% 28px;
+	}
+
+	/* Developer & Designer */
+	#smirkusapp-discription {
+		height: 396px;
+	}
+
+	#fitinSmirkusApp {
+		height: 61%;
+	}
+
+	#cowduckapp-discription {
+		height: 396px;
+	}
+
+	#fitinCowDuckApp {
+		height: 81%;
+	}
+
+	.menu {
+		margin: 1% 0 0 1%;
+	}
+
+	.menu li {
+    	margin:0 0 0 2%;
+	}
+}
+
+@media (max-width: 1175px) {
+	/* Home */
+	#home {
+		background-position: 50% 55px;
+	}
+}
+
+@media (max-width:1168px) {
+
+	/* Home */
+	#home {
+		height: 1056px;
+	}
+
+	/* Developer & Designer */
+
+	#smirkusapp-discription {
+		height: 402px;
+	}
+
+	#fitinSmirkusApp {
+		height: 59%;
+	}
+
+	#cowduckapp-discription {
+		height: 402px;
+	}
+
+	#fitinCowDuckApp {
+		height: 78%;
+	}
+
+	.menu {
+		margin: 1% 0 0 1%;
+	}
+
+	.menu li {
+    	margin:0 0 0 1.7%;
+	}
+}
+
+@media (max-width: 1130px) {
+	#smirkusapp-discription {
+		height: 361px;
+	}
+	#fitinSmirkusApp {
+		height:66%;
+	}
+	#cowduckapp-discription {
+		height: 361px;
+	}
+	#fitinCowDuckApp {
+		height:66%;
+	}
+}
+
+@media (max-width:1110px) {
+
+	#smirkusapp-discription {
+		height: 373px;
+	}
+
+	#fitinSmirkusApp {
+		height: 60%;
+	}
+
+	#cowduckapp-discription {
+		height: 373px;
+	}
+
+	#fitinCowDuckApp {
+		height: 77%;
+	}
+
+	#secondDemoSite {
+		margin: 0 0 0 2%;
+	}
+
+	#thirdDemoSite {
+		margin: 0 0 0 -1%;
+	}
+}
+
+@media (max-width: 1100px) {
+	/* Home */
+	#home {
+		background-position: 50% 87px;
+		background-size: 1100px;
+	}
+}
+
+@media (max-width:1060px) {
+
+	#developerWrapper {
+		background: url(../images/tabletBackground.jpg) no-repeat;
+		background-position: center top;
+		background-size: 1060px 990px;
+		/*background-position: center;*/
+		margin-top: 11%;
+		height: 840px;
+	}
+
+	.menu {
+		margin: .8% 0 0 1%;
+	}
+
+	.menu li {
+    	margin:0 0 0 3%;
+	}
+
+	.menu li a {
+		font-size: 70%;
+	}
+
+	#secondDemoSite {
+		margin: 0 0 0 3%;
+	}
+
+	#thirdDemoSite {
+		margin: 0 0 0 3%;
+	}
+
+	.ribbon-wrapper-computer {
+		width: 180px;
+		height: 200px;
+		overflow: hidden;
+		position: absolute;
+		left: 720px;
+		margin: 283px 0 0 0;
+		z-index: 1;
+	}
+
+	.ribbon-computer {
+		position: relative;
+		padding: 5% 0;
+		margin: 26% 0 0 0;
+		right: -6.4%;
+		width: 117%;
+	}
+
+	#web-work {
+		height: 428px;
+		width: 670px;
+		margin: 324px 0 0 189px;
+		position: absolute;
+	}
+
+	.ribbon-wrapper-iphone {
+		width: 200px;
+		height: 138px;
+		overflow: hidden;
+		position: absolute;
+		margin: 14px 0 0 258px;
+		z-index: 3;
+	}
+
+	.ribbon-iphone {
+		position: relative;
+		padding: 5% 0;
+		margin: 18% 0 0 0;
+		right: 21.6%;
+		width: 97%;
+	}
+
+	#iphoneWork {
+		background: url(../images/sideiPhone.jpg) no-repeat;
+		background-size: 100%;
+		height: 216px;
+		width: 382px;
+		margin: 34px 0 0 336px;
+		position: absolute;
+	}
+
+	#clock {
+		margin: 90px 0 0 361px;
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Safari and Chrome */
+		z-index: 1;
+	}
+
+	#iPhone-home-button {
+		width: 50px;
+		height: 50px;
+		margin: 82px 0 0 -62px;
+		display: block;
+		position: absolute;
+		z-index: 4;
+	}
+
+	#smirkusapp-discription {
+		background: url(../images/sideSmirkusBG.jpg) no-repeat;
+		background-size: 100%;
+		width: 382px;
+		height: 215px;
+		max-width: 382px;
+		margin-top: 0px;
+	}
+
+	#fitinSmirkusApp {
+		height: 179px;
+		width: 362px;
+		margin: 34px 2px 0 5px;
+	}
+
+	#cowduckapp-discription {
+		background: url(../images/sideCowDuckBG.jpg) no-repeat;
+		background-size: 100%;
+		width: 382px;
+		height: 215px;
+		max-width: 382px;
+	}
+
+	#fitinCowDuckApp {
+		height: 179px;
+		width: 362px;
+		margin: 34px 2px 0 5px;
+	}
+
+	#smirkus-app {
+		width: 50px;
+		height: 50px;
+		margin: 58px 0 0 7px;
+		display: block;
+		position: absolute;
+		/*z-index: 4;*/
+	}
+
+	#cowDuck {
+		width: 50px;
+		height: 50px;
+		margin: 114px 0 0 5px;
+		display: block;
+		position: absolute;
+		/*z-index: 4;*/
+	}
+
+	#cowduckImage {
+		display: none;
+	}
+
+	#fitinCowDuckApp img {
+		width: 250px;
+		float: left;
+		padding-right: 3px;
+		display: inherit;
+	}
+}
+
+@media (max-width:1057px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 335px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 256px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 186px;
+	}
+}
+
+@media (max-width:1055px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 334px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 255px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 185px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -1px;
+	}
+}
+
+@media (max-width:1053px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 333px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 254px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 184px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -2px;
+	}
+}
+
+@media (max-width:1051px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 332px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 253px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 183px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -3px;
+	}
+}
+
+@media (max-width:1049px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 331px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 252px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 182px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -4px;
+	}
+}
+
+@media (max-width:1047px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 330px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 251px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 181px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -5px;
+	}
+}
+
+@media (max-width:1045px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 329px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 250px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 180px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -6px;
+	}
+}
+
+@media (max-width:1043px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 328px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 249px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 179px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -7px;
+	}
+}
+
+@media (max-width:1041px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 327px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 248px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 178px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -8px;
+	}
+}
+
+@media (max-width:1039px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 326px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 247px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 177px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -9px;
+	}
+}
+
+@media (max-width:1037px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 325px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 246px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 176px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -10px;
+	}
+}
+
+@media (max-width:1035px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 324px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 245px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 175px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -11px;
+	}
+}
+
+@media (max-width:1033px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 323px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 244px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 174px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -12px;
+	}
+}
+
+@media (max-width:1031px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 322px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 243px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 173px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -13px;
+	}
+}
+
+@media (max-width:1029px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 321px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 242px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 172px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -14px;
+	}
+}
+
+@media (max-width:1027px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 320px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 241px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 171px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -15px;
+	}
+}
+
+@media (max-width:1025px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 319px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 240px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 170px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -16px;
+	}
+}
+
+@media (max-width:1023px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 317px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 239px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 169px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -17px;
+	}
+}
+
+@media (max-width:1021px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 316px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 238px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 168px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -18px;
+	}
+}
+
+@media (max-width:1019px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 315px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 237px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 167px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -19px;
+	}
+}
+
+@media (max-width:1017px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 314px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 236px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 166px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -20px;
+	}
+}
+
+@media (max-width:1015px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 313px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 235px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 165px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -21px;
+	}
+}
+
+@media (max-width:1013px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 312px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 234px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 164px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -22px;
+	}
+}
+
+@media (max-width:1011px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 311px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 233px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 163px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -23px;
+	}
+}
+
+@media (max-width:1009px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 310px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 232px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 162px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -24px;
+	}
+}
+
+@media (max-width:1007px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 309px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 231px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 161px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -25px;
+	}
+}
+
+@media (max-width:1005px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 308px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 230px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 160px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -26px;
+	}
+}
+
+@media (max-width:1003px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 307px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 229px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 159px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -27px;
+	}
+}
+
+@media (max-width:1001px) {
+
+	#about { 
+	background-size: 1100px;
+	}
+
+	#iphoneWork {
+		margin: 34px 0 0 306px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 228px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 158px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -28px;
+	}
+}
+
+@media (max-width:999px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 305px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 227px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 157px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -29px;
+	}
+}
+
+@media (max-width: 997px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 304px;
+	}
+
+	.ribbon-wrapper-iphone {
+		margin: 14px 0 0 226px;
+	}
+
+	#web-work {
+		margin: 324px 0 0 156px;
+	}
+
+	.ribbon-wrapper-computer {
+		margin: 283px 0 0 -30px;
+	}
+}
+
+
+@media (max-width: 995px) {
+
+	#iphoneWork {
+		margin: 34px 0 0 303px;
+	}
+
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 225px;
+	}
+
+	#web-work {
+		 margin: 324px 0 0 155px;
+	}
+
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -31px;
+	}
+}
+
+
+@media (max-width: 993px) {
+
+	#iphoneWork {
+		 margin: 34px 0 0 302px;
+	}
+
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 224px;
+	}
+
+	#web-work {
+		 margin: 324px 0 0 154px;
+	}
+
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -32px;
+	}
+}
+
+@media (max-width: 991px) {
+
+	#iphoneWork {
+		 margin: 34px 0 0 301px;
+	}
+
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 223px;
+	}
+
+	#web-work {
+		 margin: 324px 0 0 153px;
+	}
+
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -33px;
+	}
+}
+
+@media (max-width: 989px) {
+	#iphoneWork {
+		 margin: 34px 0 0 300px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 222px;
+	}
+	#web-work {
+		 margin: 324px 0 0 152px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -34px;
+	}
+}
+@media (max-width: 987px) {
+	#iphoneWork {
+		 margin: 34px 0 0 299px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 221px;
+	}
+	#web-work {
+		 margin: 324px 0 0 151px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -35px;
+	}
+}
+@media (max-width: 985px) {
+	#iphoneWork {
+		 margin: 34px 0 0 298px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 220px;
+	}
+	#web-work {
+		 margin: 324px 0 0 150px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -36px;
+	}
+}
+@media (max-width: 983px) {
+	#iphoneWork {
+		 margin: 34px 0 0 297px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 219px;
+	}
+	#web-work {
+		 margin: 324px 0 0 149px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -37px;
+	}
+}
+@media (max-width: 981px) {
+	#iphoneWork {
+		 margin: 34px 0 0 296px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 218px;
+	}
+	#web-work {
+		 margin: 324px 0 0 148px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -38px;
+	}
+}
+@media (max-width: 979px) {
+	#iphoneWork {
+		 margin: 34px 0 0 295px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 217px;
+	}
+	#web-work {
+		 margin: 324px 0 0 147px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -39px;
+	}
+}
+@media (max-width: 977px) {
+	#iphoneWork {
+		 margin: 34px 0 0 294px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 216px;
+	}
+	#web-work {
+		 margin: 324px 0 0 146px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -40px;
+	}
+}
+@media (max-width: 975px) {
+	#iphoneWork {
+		 margin: 34px 0 0 293px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 215px;
+	}
+	#web-work {
+		 margin: 324px 0 0 145px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -41px;
+	}
+}
+@media (max-width: 973px) {
+	#iphoneWork {
+		 margin: 34px 0 0 292px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 214px;
+	}
+	#web-work {
+		 margin: 324px 0 0 144px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -42px;
+	}
+}
+@media (max-width: 971px) {
+	#iphoneWork {
+		 margin: 34px 0 0 291px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 213px;
+	}
+	#web-work {
+		 margin: 324px 0 0 143px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -43px;
+	}
+}
+@media (max-width: 969px) {
+	#iphoneWork {
+		 margin: 34px 0 0 290px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 212px;
+	}
+	#web-work {
+		 margin: 324px 0 0 142px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -44px;
+	}
+}
+@media (max-width: 967px) {
+	#iphoneWork {
+		 margin: 34px 0 0 289px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 211px;
+	}
+	#web-work {
+		 margin: 324px 0 0 141px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -45px;
+	}
+}
+@media (max-width: 965px) {
+	#iphoneWork {
+		 margin: 34px 0 0 288px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 210px;
+	}
+	#web-work {
+		 margin: 324px 0 0 140px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -46px;
+	}
+}
+@media (max-width: 963px) {
+	#iphoneWork {
+		 margin: 34px 0 0 287px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 209px;
+	}
+	#web-work {
+		 margin: 324px 0 0 139px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -47px;
+	}
+}
+@media (max-width: 961px) {
+	#iphoneWork {
+		 margin: 34px 0 0 286px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 208px;
+	}
+	#web-work {
+		 margin: 324px 0 0 138px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -48px;
+	}
+}
+@media (max-width: 959px) {
+	#iphoneWork {
+		 margin: 34px 0 0 285px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 207px;
+	}
+	#web-work {
+		 margin: 324px 0 0 137px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -49px;
+	}
+}
+@media (max-width: 957px) {
+	#iphoneWork {
+		 margin: 34px 0 0 284px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 206px;
+	}
+	#web-work {
+		 margin: 324px 0 0 136px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -50px;
+	}
+}
+@media (max-width: 955px) {
+	#iphoneWork {
+		 margin: 34px 0 0 283px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 205px;
+	}
+	#web-work {
+		 margin: 324px 0 0 135px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -51px;
+	}
+}
+@media (max-width: 953px) {
+	#iphoneWork {
+		 margin: 34px 0 0 282px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 204px;
+	}
+	#web-work {
+		 margin: 324px 0 0 134px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -52px;
+	}
+}
+@media (max-width: 951px) {
+	#iphoneWork {
+		 margin: 34px 0 0 281px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 203px;
+	}
+	#web-work {
+		 margin: 324px 0 0 133px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -53px;
+	}
+}
+@media (max-width: 949px) {
+	#iphoneWork {
+		 margin: 34px 0 0 280px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 202px;
+	}
+	#web-work {
+		 margin: 324px 0 0 132px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -54px;
+	}
+}
+@media (max-width: 947px) {
+	#iphoneWork {
+		 margin: 34px 0 0 279px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 201px;
+	}
+	#web-work {
+		 margin: 324px 0 0 131px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -55px;
+	}
+}
+@media (max-width: 945px) {
+	#iphoneWork {
+		 margin: 34px 0 0 278px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 200px;
+	}
+	#web-work {
+		 margin: 324px 0 0 130px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -56px;
+	}
+}
+@media (max-width: 943px) {
+	#iphoneWork {
+		 margin: 34px 0 0 277px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 199px;
+	}
+	#web-work {
+		 margin: 324px 0 0 129px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -57px;
+	}
+}
+@media (max-width: 941px) {
+	#iphoneWork {
+		 margin: 34px 0 0 276px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 198px;
+	}
+	#web-work {
+		 margin: 324px 0 0 128px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -58px;
+	}
+}
+@media (max-width: 939px) {
+	#iphoneWork {
+		 margin: 34px 0 0 275px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 197px;
+	}
+	#web-work {
+		 margin: 324px 0 0 127px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -59px;
+	}
+}
+@media (max-width: 937px) {
+	#iphoneWork {
+		 margin: 34px 0 0 274px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 196px;
+	}
+	#web-work {
+		 margin: 324px 0 0 126px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -60px;
+	}
+}
+@media (max-width: 935px) {
+	#iphoneWork {
+		 margin: 34px 0 0 273px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 195px;
+	}
+	#web-work {
+		 margin: 324px 0 0 125px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -61px;
+	}
+}
+@media (max-width: 933px) {
+	#iphoneWork {
+		 margin: 34px 0 0 272px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 194px;
+	}
+	#web-work {
+		 margin: 324px 0 0 124px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -62px;
+	}
+}
+@media (max-width: 931px) {
+	#iphoneWork {
+		 margin: 34px 0 0 271px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 193px;
+	}
+	#web-work {
+		 margin: 324px 0 0 123px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -63px;
+	}
+}
+@media (max-width: 929px) {
+	#iphoneWork {
+		 margin: 34px 0 0 270px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 192px;
+	}
+	#web-work {
+		 margin: 324px 0 0 122px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -64px;
+	}
+}
+@media (max-width: 927px) {
+	#iphoneWork {
+		 margin: 34px 0 0 269px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 191px;
+	}
+	#web-work {
+		 margin: 324px 0 0 121px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -65px;
+	}
+}
+@media (max-width: 925px) {
+	#iphoneWork {
+		 margin: 34px 0 0 268px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 190px;
+	}
+	#web-work {
+		 margin: 324px 0 0 120px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -66px;
+	}
+}
+
+@media (max-width: 923px) {
+
+	nav ul li {
+		font-size: 0.9em;
+	}
+
+	#iphoneWork {
+		 margin: 34px 0 0 267px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 189px;
+	}
+	#web-work {
+		 margin: 324px 0 0 119px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -67px;
+	}
+}
+
+@media (max-width: 921px) {
+	#iphoneWork {
+		 margin: 34px 0 0 266px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 188px;
+	}
+	#web-work {
+		 margin: 324px 0 0 118px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -68px;
+	}
+}
+@media (max-width: 919px) {
+	#iphoneWork {
+		 margin: 34px 0 0 265px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 187px;
+	}
+	#web-work {
+		 margin: 324px 0 0 117px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -69px;
+	}
+}
+@media (max-width: 917px) {
+	#iphoneWork {
+		 margin: 34px 0 0 264px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 186px;
+	}
+	#web-work {
+		 margin: 324px 0 0 116px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -70px;
+	}
+}
+@media (max-width: 915px) {
+	#iphoneWork {
+		 margin: 34px 0 0 263px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 185px;
+	}
+	#web-work {
+		 margin: 324px 0 0 115px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -71px;
+	}
+}
+@media (max-width: 913px) {
+	#iphoneWork {
+		 margin: 34px 0 0 262px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 184px;
+	}
+	#web-work {
+		 margin: 324px 0 0 114px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -72px;
+	}
+}
+@media (max-width: 911px) {
+	#iphoneWork {
+		 margin: 34px 0 0 261px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 183px;
+	}
+	#web-work {
+		 margin: 324px 0 0 113px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -73px;
+	}
+}
+@media (max-width: 909px) {
+	#iphoneWork {
+		 margin: 34px 0 0 260px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 182px;
+	}
+	#web-work {
+		 margin: 324px 0 0 112px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -74px;
+	}
+}
+@media (max-width: 907px) {
+	#iphoneWork {
+		 margin: 34px 0 0 259px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 181px;
+	}
+	#web-work {
+		 margin: 324px 0 0 111px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -75px;
+	}
+}
+@media (max-width: 905px) {
+	#iphoneWork {
+		 margin: 34px 0 0 258px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 180px;
+	}
+	#web-work {
+		 margin: 324px 0 0 110px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -76px;
+	}
+}
+@media (max-width: 903px) {
+	#iphoneWork {
+		 margin: 34px 0 0 257px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 179px;
+	}
+	#web-work {
+		 margin: 324px 0 0 109px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -77px;
+	}
+}
+@media (max-width: 901px) {
+	#iphoneWork {
+		 margin: 34px 0 0 256px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 178px;
+	}
+	#web-work {
+		 margin: 324px 0 0 108px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -78px;
+	}
+}
+@media (max-width: 899px) {
+	#iphoneWork {
+		 margin: 34px 0 0 255px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 177px;
+	}
+	#web-work {
+		 margin: 324px 0 0 107px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -79px;
+	}
+}
+@media (max-width: 897px) {
+	#iphoneWork {
+		 margin: 34px 0 0 254px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 176px;
+	}
+	#web-work {
+		 margin: 324px 0 0 106px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -80px;
+	}
+}
+@media (max-width: 895px) {
+	#iphoneWork {
+		 margin: 34px 0 0 253px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 175px;
+	}
+	#web-work {
+		 margin: 324px 0 0 105px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -81px;
+	}
+}
+@media (max-width: 893px) {
+	#iphoneWork {
+		 margin: 34px 0 0 252px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 174px;
+	}
+	#web-work {
+		 margin: 324px 0 0 104px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -82px;
+	}
+}
+@media (max-width: 891px) {
+	#iphoneWork {
+		 margin: 34px 0 0 251px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 173px;
+	}
+	#web-work {
+		 margin: 324px 0 0 103px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -83px;
+	}
+}
+@media (max-width: 889px) {
+	#iphoneWork {
+		 margin: 34px 0 0 250px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 172px;
+	}
+	#web-work {
+		 margin: 324px 0 0 102px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -84px;
+	}
+}
+@media (max-width: 887px) {
+	#iphoneWork {
+		 margin: 34px 0 0 249px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 171px;
+	}
+	#web-work {
+		 margin: 324px 0 0 101px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -85px;
+	}
+}
+@media (max-width: 885px) {
+	#iphoneWork {
+		 margin: 34px 0 0 248px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 170px;
+	}
+	#web-work {
+		 margin: 324px 0 0 100px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -86px;
+	}
+}
+@media (max-width: 883px) {
+
+	#developerWrapper {
+		margin-top: 13%;
+	}
+
+	#iphoneWork {
+		 margin: 34px 0 0 247px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 169px;
+	}
+	#web-work {
+		 margin: 324px 0 0 99px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -87px;
+	}
+}
+@media (max-width: 881px) {
+	#iphoneWork {
+		 margin: 34px 0 0 246px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 168px;
+	}
+	#web-work {
+		 margin: 324px 0 0 98px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -88px;
+	}
+}
+@media (max-width: 879px) {
+	#iphoneWork {
+		 margin: 34px 0 0 245px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 167px;
+	}
+	#web-work {
+		 margin: 324px 0 0 97px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -89px;
+	}
+}
+@media (max-width: 877px) {
+	#iphoneWork {
+		 margin: 34px 0 0 244px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 166px;
+	}
+	#web-work {
+		 margin: 324px 0 0 96px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -90px;
+	}
+}
+@media (max-width: 875px) {
+	#iphoneWork {
+		 margin: 34px 0 0 243px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 165px;
+	}
+	#web-work {
+		 margin: 324px 0 0 95px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -91px;
+	}
+}
+@media (max-width: 873px) {
+	#iphoneWork {
+		 margin: 34px 0 0 242px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 164px;
+	}
+	#web-work {
+		 margin: 324px 0 0 94px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -92px;
+	}
+}
+@media (max-width: 871px) {
+	#iphoneWork {
+		 margin: 34px 0 0 241px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 163px;
+	}
+	#web-work {
+		 margin: 324px 0 0 93px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -93px;
+	}
+}
+@media (max-width: 869px) {
+
+	nav ul li {
+		font-size: 0.8em;
+	}
+
+	#iphoneWork {
+		 margin: 34px 0 0 240px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 162px;
+	}
+	#web-work {
+		 margin: 324px 0 0 92px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -94px;
+	}
+}
+@media (max-width: 867px) {
+	#iphoneWork {
+		 margin: 34px 0 0 239px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 161px;
+	}
+	#web-work {
+		 margin: 324px 0 0 91px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -95px;
+	}
+}
+@media (max-width: 865px) {
+	#iphoneWork {
+		 margin: 34px 0 0 238px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 160px;
+	}
+	#web-work {
+		 margin: 324px 0 0 90px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -96px;
+	}
+}
+@media (max-width: 863px) {
+	#iphoneWork {
+		 margin: 34px 0 0 237px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 159px;
+	}
+	#web-work {
+		 margin: 324px 0 0 89px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -97px;
+	}
+}
+@media (max-width: 861px) {
+	#iphoneWork {
+		 margin: 34px 0 0 236px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 158px;
+	}
+	#web-work {
+		 margin: 324px 0 0 88px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -98px;
+	}
+}
+@media (max-width: 859px) {
+	#iphoneWork {
+		 margin: 34px 0 0 235px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 157px;
+	}
+	#web-work {
+		 margin: 324px 0 0 87px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -99px;
+	}
+}
+@media (max-width: 857px) {
+	#iphoneWork {
+		 margin: 34px 0 0 234px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 156px;
+	}
+	#web-work {
+		 margin: 324px 0 0 86px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -100px;
+	}
+}
+@media (max-width: 855px) {
+	#iphoneWork {
+		 margin: 34px 0 0 233px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 155px;
+	}
+	#web-work {
+		 margin: 324px 0 0 85px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -101px;
+	}
+}
+@media (max-width: 853px) {
+	#iphoneWork {
+		 margin: 34px 0 0 232px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 154px;
+	}
+	#web-work {
+		 margin: 324px 0 0 84px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -102px;
+	}
+}
+@media (max-width: 851px) {
+	#iphoneWork {
+		 margin: 34px 0 0 231px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 153px;
+	}
+	#web-work {
+		 margin: 324px 0 0 83px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -103px;
+	}
+}
+@media (max-width: 849px) {
+	#iphoneWork {
+		 margin: 34px 0 0 230px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 152px;
+	}
+	#web-work {
+		 margin: 324px 0 0 82px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -104px;
+	}
+}
+@media (max-width: 847px) {
+	#iphoneWork {
+		 margin: 34px 0 0 229px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 151px;
+	}
+	#web-work {
+		 margin: 324px 0 0 81px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -105px;
+	}
+}
+@media (max-width: 845px) {
+	#iphoneWork {
+		 margin: 34px 0 0 228px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 150px;
+	}
+	#web-work {
+		 margin: 324px 0 0 80px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -106px;
+	}
+}
+@media (max-width: 843px) {
+	#iphoneWork {
+		 margin: 34px 0 0 227px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 149px;
+	}
+	#web-work {
+		 margin: 324px 0 0 79px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -107px;
+	}
+}
+@media (max-width: 841px) {
+	#iphoneWork {
+		 margin: 34px 0 0 226px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 148px;
+	}
+	#web-work {
+		 margin: 324px 0 0 78px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -108px;
+	}
+}
+@media (max-width: 839px) {
+	#iphoneWork {
+		 margin: 34px 0 0 225px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 147px;
+	}
+	#web-work {
+		 margin: 324px 0 0 77px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -109px;
+	}
+}
+@media (max-width: 837px) {
+	#iphoneWork {
+		 margin: 34px 0 0 224px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 146px;
+	}
+	#web-work {
+		 margin: 324px 0 0 76px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -110px;
+	}
+}
+@media (max-width: 835px) {
+	#iphoneWork {
+		 margin: 34px 0 0 223px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 145px;
+	}
+	#web-work {
+		 margin: 324px 0 0 75px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -111px;
+	}
+}
+@media (max-width: 833px) {
+	#iphoneWork {
+		 margin: 34px 0 0 222px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 144px;
+	}
+	#web-work {
+		 margin: 324px 0 0 74px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -112px;
+	}
+}
+@media (max-width: 831px) {
+	#iphoneWork {
+		 margin: 34px 0 0 221px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 143px;
+	}
+	#web-work {
+		 margin: 324px 0 0 73px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -113px;
+	}
+}
+@media (max-width: 829px) {
+	#iphoneWork {
+		 margin: 34px 0 0 220px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 142px;
+	}
+	#web-work {
+		 margin: 324px 0 0 72px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -114px;
+	}
+}
+@media (max-width: 827px) {
+	#iphoneWork {
+		 margin: 34px 0 0 219px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 141px;
+	}
+	#web-work {
+		 margin: 324px 0 0 71px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -115px;
+	}
+}
+@media (max-width: 825px) {
+	#iphoneWork {
+		 margin: 34px 0 0 218px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 140px;
+	}
+	#web-work {
+		 margin: 324px 0 0 70px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -116px;
+	}
+}
+@media (max-width: 823px) {
+	#iphoneWork {
+		 margin: 34px 0 0 217px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 139px;
+	}
+	#web-work {
+		 margin: 324px 0 0 69px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -117px;
+	}
+}
+@media (max-width: 821px) {
+	#iphoneWork {
+		 margin: 34px 0 0 216px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 138px;
+	}
+	#web-work {
+		 margin: 324px 0 0 68px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -118px;
+	}
+}
+@media (max-width: 819px) {
+	#iphoneWork {
+		 margin: 34px 0 0 215px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 137px;
+	}
+	#web-work {
+		 margin: 324px 0 0 67px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -119px;
+	}
+}
+@media (max-width: 817px) {
+	#iphoneWork {
+		 margin: 34px 0 0 214px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 136px;
+	}
+	#web-work {
+		 margin: 324px 0 0 66px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -120px;
+	}
+}
+@media (max-width: 815px) {
+	#iphoneWork {
+		 margin: 34px 0 0 213px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 135px;
+	}
+	#web-work {
+		 margin: 324px 0 0 65px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -121px;
+	}
+}
+@media (max-width: 813px) {
+	#iphoneWork {
+		 margin: 34px 0 0 212px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 134px;
+	}
+	#web-work {
+		 margin: 324px 0 0 64px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -122px;
+	}
+}
+@media (max-width: 811px) {
+	#iphoneWork {
+		 margin: 34px 0 0 211px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 133px;
+	}
+	#web-work {
+		 margin: 324px 0 0 63px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -123px;
+	}
+}
+@media (max-width: 809px) {
+	#iphoneWork {
+		 margin: 34px 0 0 210px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 132px;
+	}
+	#web-work {
+		 margin: 324px 0 0 62px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -124px;
+	}
+}
+@media (max-width: 807px) {
+	#iphoneWork {
+		 margin: 34px 0 0 209px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 131px;
+	}
+	#web-work {
+		 margin: 324px 0 0 61px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -125px;
+	}
+}
+@media (max-width: 805px) {
+	#iphoneWork {
+		 margin: 34px 0 0 208px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 130px;
+	}
+	#web-work {
+		 margin: 324px 0 0 60px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -126px;
+	}
+}
+@media (max-width: 803px) {
+	#iphoneWork {
+		 margin: 34px 0 0 207px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 129px;
+	}
+	#web-work {
+		 margin: 324px 0 0 59px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -127px;
+	}
+}
+@media (max-width: 801px) {
+	#iphoneWork {
+		 margin: 34px 0 0 206px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 128px;
+	}
+	#web-work {
+		 margin: 324px 0 0 58px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -128px;
+	}
+}
+@media (max-width: 799px) {
+	#iphoneWork {
+		 margin: 34px 0 0 205px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 127px;
+	}
+	#web-work {
+		 margin: 324px 0 0 57px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -129px;
+	}
+}
+@media (max-width: 797px) {
+	#iphoneWork {
+		 margin: 34px 0 0 204px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 126px;
+	}
+	#web-work {
+		 margin: 324px 0 0 56px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -130px;
+	}
+}
+@media (max-width: 795px) {
+	#iphoneWork {
+		 margin: 34px 0 0 203px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 125px;
+	}
+	#web-work {
+		 margin: 324px 0 0 55px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -131px;
+	}
+}
+@media (max-width: 793px) {
+	#iphoneWork {
+		 margin: 34px 0 0 202px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 124px;
+	}
+	#web-work {
+		 margin: 324px 0 0 54px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -132px;
+	}
+}
+@media (max-width: 791px) {
+	#iphoneWork {
+		 margin: 34px 0 0 201px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 123px;
+	}
+	#web-work {
+		 margin: 324px 0 0 53px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -133px;
+	}
+}
+@media (max-width: 789px) {
+	#iphoneWork {
+		 margin: 34px 0 0 200px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 122px;
+	}
+	#web-work {
+		 margin: 324px 0 0 52px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -134px;
+	}
+}
+@media (max-width: 787px) {
+	#iphoneWork {
+		 margin: 34px 0 0 199px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 121px;
+	}
+	#web-work {
+		 margin: 324px 0 0 51px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -135px;
+	}
+}
+@media (max-width: 785px) {
+	#iphoneWork {
+		 margin: 34px 0 0 198px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 120px;
+	}
+	#web-work {
+		 margin: 324px 0 0 50px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -136px;
+	}
+}
+@media (max-width: 783px) {
+	#iphoneWork {
+		 margin: 34px 0 0 197px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 119px;
+	}
+	#web-work {
+		 margin: 324px 0 0 49px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -137px;
+	}
+}
+@media (max-width: 781px) {
+	#iphoneWork {
+		 margin: 34px 0 0 196px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 118px;
+	}
+	#web-work {
+		 margin: 324px 0 0 48px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -138px;
+	}
+}
+@media (max-width: 779px) {
+	#iphoneWork {
+		 margin: 34px 0 0 195px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 117px;
+	}
+	#web-work {
+		 margin: 324px 0 0 47px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -139px;
+	}
+}
+@media (max-width: 777px) {
+	#iphoneWork {
+		 margin: 34px 0 0 194px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 116px;
+	}
+	#web-work {
+		 margin: 324px 0 0 46px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -140px;
+	}
+}
+@media (max-width: 775px) {
+
+	#developerWrapper {
+		margin-top: 14%;
+	}
+
+	#iphoneWork {
+		 margin: 34px 0 0 193px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 115px;
+	}
+	#web-work {
+		 margin: 324px 0 0 45px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -141px;
+	}
+}
+@media (max-width: 773px) {
+	#iphoneWork {
+		 margin: 34px 0 0 192px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 114px;
+	}
+	#web-work {
+		 margin: 324px 0 0 44px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -142px;
+	}
+}
+@media (max-width: 771px) {
+	#iphoneWork {
+		 margin: 34px 0 0 191px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 113px;
+	}
+	#web-work {
+		 margin: 324px 0 0 43px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -143px;
+	}
+}
+@media (max-width: 769px) {
+	#iphoneWork {
+		 margin: 34px 0 0 190px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 112px;
+	}
+	#web-work {
+		 margin: 324px 0 0 42px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -144px;
+	}
+}
+@media (max-width: 767px) {
+	/* Home */
+	#home {
+		background: url(../images/blueBlur.jpg) 50% 0 no-repeat fixed;
+		background-size: 1100px;
+		margin: 0 auto;
+		height: 526px;
+	}
+
+	#home article {
+		margin: 0;
+		font-size: 18px;
+	}
+
+	#home article p {
+		width: auto;
+		margin: 0 10px;
+	}
+
+	#about {
+		height: auto;
+		top: -166px;
+		position: static;
+		padding-top: 20px;
+	}
+
+	#about article {
+		width: auto;
+		margin: 0px 10px;
+		font-size: 18px;
+		top: 0;
+	}
+
+	.resumeButton {
+		width: 244px;
+		margin: 14px 0 0 0;
+		display: inline-block;
+	}
+
+	#iphoneWork {
+		 margin: 34px 0 0 189px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 111px;
+	}
+	#web-work {
+		 margin: 324px 0 0 41px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -145px;
+	}
+}
+@media (max-width: 765px) {
+	#iphoneWork {
+		 margin: 34px 0 0 188px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 110px;
+	}
+	#web-work {
+		 margin: 324px 0 0 40px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -146px;
+	}
+}
+@media (max-width: 763px) {
+	#iphoneWork {
+		 margin: 34px 0 0 187px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 109px;
+	}
+	#web-work {
+		 margin: 324px 0 0 39px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -147px;
+	}
+}
+@media (max-width: 761px) {
+	#iphoneWork {
+		 margin: 34px 0 0 186px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 108px;
+	}
+	#web-work {
+		 margin: 324px 0 0 38px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -148px;
+	}
+}
+@media (max-width: 759px) {
+	#iphoneWork {
+		 margin: 34px 0 0 185px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 107px;
+	}
+	#web-work {
+		 margin: 324px 0 0 37px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -149px;
+	}
+}
+@media (max-width: 757px) {
+	#iphoneWork {
+		 margin: 34px 0 0 184px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 106px;
+	}
+	#web-work {
+		 margin: 324px 0 0 36px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -150px;
+	}
+}
+@media (max-width: 755px) {
+	#iphoneWork {
+		 margin: 34px 0 0 183px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 105px;
+	}
+	#web-work {
+		 margin: 324px 0 0 35px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -151px;
+	}
+}
+@media (max-width: 753px) {
+	#iphoneWork {
+		 margin: 34px 0 0 182px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 104px;
+	}
+	#web-work {
+		 margin: 324px 0 0 34px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -152px;
+	}
+}
+@media (max-width: 751px) {
+	#iphoneWork {
+		 margin: 34px 0 0 181px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 103px;
+	}
+	#web-work {
+		 margin: 324px 0 0 33px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -153px;
+	}
+}
+@media (max-width: 749px) {
+	#iphoneWork {
+		 margin: 34px 0 0 180px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 102px;
+	}
+	#web-work {
+		 margin: 324px 0 0 32px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -154px;
+	}
+}
+@media (max-width: 747px) {
+	#iphoneWork {
+		 margin: 34px 0 0 179px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 101px;
+	}
+	#web-work {
+		 margin: 324px 0 0 31px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -155px;
+	}
+}
+@media (max-width: 745px) {
+	#iphoneWork {
+		 margin: 34px 0 0 178px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 100px;
+	}
+	#web-work {
+		 margin: 324px 0 0 30px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -156px;
+	}
+}
+@media (max-width: 743px) {
+	#iphoneWork {
+		 margin: 34px 0 0 177px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 99px;
+	}
+	#web-work {
+		 margin: 324px 0 0 29px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -157px;
+	}
+}
+@media (max-width: 741px) {
+	#iphoneWork {
+		 margin: 34px 0 0 176px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 98px;
+	}
+	#web-work {
+		 margin: 324px 0 0 28px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -158px;
+	}
+}
+@media (max-width: 739px) {
+	#iphoneWork {
+		 margin: 34px 0 0 175px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 97px;
+	}
+	#web-work {
+		 margin: 324px 0 0 27px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -159px;
+	}
+}
+@media (max-width: 737px) {
+	#iphoneWork {
+		 margin: 34px 0 0 174px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 96px;
+	}
+	#web-work {
+		 margin: 324px 0 0 26px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -160px;
+	}
+}
+@media (max-width: 735px) {
+	#iphoneWork {
+		 margin: 34px 0 0 173px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 95px;
+	}
+	#web-work {
+		 margin: 324px 0 0 25px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -161px;
+	}
+}
+@media (max-width: 733px) {
+	#iphoneWork {
+		 margin: 34px 0 0 172px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 94px;
+	}
+	#web-work {
+		 margin: 324px 0 0 24px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -162px;
+	}
+}
+@media (max-width: 731px) {
+	#iphoneWork {
+		 margin: 34px 0 0 171px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 93px;
+	}
+	#web-work {
+		 margin: 324px 0 0 23px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -163px;
+	}
+}
+@media (max-width: 729px) {
+	#iphoneWork {
+		 margin: 34px 0 0 170px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 92px;
+	}
+	#web-work {
+		 margin: 324px 0 0 22px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -164px;
+	}
+}
+@media (max-width: 727px) {
+	#iphoneWork {
+		 margin: 34px 0 0 169px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 91px;
+	}
+	#web-work {
+		 margin: 324px 0 0 21px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -165px;
+	}
+}
+@media (max-width: 725px) {
+	#iphoneWork {
+		 margin: 34px 0 0 168px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 90px;
+	}
+	#web-work {
+		 margin: 324px 0 0 20px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -166px;
+	}
+}
+@media (max-width: 723px) {
+
+	#developerWrapper {
+		margin-top: 15%;
+	}
+
+	#iphoneWork {
+		 margin: 34px 0 0 167px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 89px;
+	}
+	#web-work {
+		 margin: 324px 0 0 19px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -167px;
+	}
+}
+@media (max-width: 721px) {
+	#iphoneWork {
+		 margin: 34px 0 0 166px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 88px;
+	}
+	#web-work {
+		 margin: 324px 0 0 18px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -168px;
+	}
+}
+@media (max-width: 719px) {
+	#iphoneWork {
+		 margin: 34px 0 0 165px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 87px;
+	}
+	#web-work {
+		 margin: 324px 0 0 17px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -169px;
+	}
+}
+@media (max-width: 717px) {
+	#iphoneWork {
+		 margin: 34px 0 0 164px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 86px;
+	}
+	#web-work {
+		 margin: 324px 0 0 16px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -170px;
+	}
+}
+@media (max-width: 715px) {
+	#iphoneWork {
+		 margin: 34px 0 0 163px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 85px;
+	}
+	#web-work {
+		 margin: 324px 0 0 15px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -171px;
+	}
+}
+@media (max-width: 713px) {
+	#iphoneWork {
+		 margin: 34px 0 0 162px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 84px;
+	}
+	#web-work {
+		 margin: 324px 0 0 14px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -172px;
+	}
+}
+@media (max-width: 711px) {
+	#iphoneWork {
+		 margin: 34px 0 0 161px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 83px;
+	}
+	#web-work {
+		 margin: 324px 0 0 13px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -173px;
+	}
+}
+@media (max-width: 709px) {
+	#iphoneWork {
+		 margin: 34px 0 0 160px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 82px;
+	}
+	#web-work {
+		 margin: 324px 0 0 12px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -174px;
+	}
+}
+@media (max-width: 707px) {
+	#iphoneWork {
+		 margin: 34px 0 0 159px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 81px;
+	}
+	#web-work {
+		 margin: 324px 0 0 11px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -175px;
+	}
+}
+@media (max-width: 705px) {
+	#iphoneWork {
+		 margin: 34px 0 0 158px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 80px;
+	}
+	#web-work {
+		 margin: 324px 0 0 10px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -176px;
+	}
+}
+@media (max-width: 703px) {
+	#iphoneWork {
+		 margin: 34px 0 0 157px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 79px;
+	}
+	#web-work {
+		 margin: 324px 0 0 9px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -177px;
+	}
+}
+@media (max-width: 701px) {
+	#iphoneWork {
+		 margin: 34px 0 0 156px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 78px;
+	}
+	#web-work {
+		 margin: 324px 0 0 8px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -178px;
+	}
+
+	#lineMenu {
+		display: inherit;
+		margin: 25px 30px 0 0;
+		font-size: 1.9em;
+		position: absolute;
+		right: 20px;
+		color: #0DA4B5;
+	}
+
+	nav {
+		height: 67px;
+	}
+
+	#logo {
+		margin-top: 11px;
+	}
+
+	nav ul {
+		background: white;
+		-webkit-box-shadow: 0px 2px 1px .2px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 2px 1px .2px rgba(0, 0, 0, 0.2);
+	}
+
+	#hiddingMenu {
+		padding: 7px 0 7px 0;
+	}
+
+	nav ul li {
+		position: relative;
+		display: block;
+		text-align: right;
+	}
+
+	.starIcons {
+		float: right;
+		margin: 0 52px 0 4px;
+	}
+
+	/* Home */
+	#home {
+		background-position: -374px 58px;
+		background-size: 1300px;
+	}
+}
+
+@media (max-width: 597px) {
+	#logo {
+		font-size: 3em;
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 547px) {
+	#logo {
+		font-size: 2.3em;
+		margin: 20px 0 0 7px;
+	}
+}
+
+@media (max-width: 454px) {
+	#logo {
+		margin: 20px 0 0 7px;
+		float: left;
+	}
+
+	#hiddingMenu {
+		margin-top: 50px;
+	}
+
+	#lineMenu {
+		right: -23px;
+	}
+
+	.starIcons {
+		margin-right: 9px;
+	}
+}
+
+@media (max-width: 330px) {
+	#logo {
+		font-size: 2.2em;
+	}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 699px) {
+	#iphoneWork {
+		 margin: 34px 0 0 155px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 77px;
+	}
+	#web-work {
+		 margin: 324px 0 0 7px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -179px;
+	}
+}
+@media (max-width: 697px) {
+	#iphoneWork {
+		 margin: 34px 0 0 154px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 76px;
+	}
+	#web-work {
+		 margin: 324px 0 0 6px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -180px;
+	}
+}
+@media (max-width: 695px) {
+	#iphoneWork {
+		 margin: 34px 0 0 153px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 75px;
+	}
+	#web-work {
+		 margin: 324px 0 0 5px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -181px;
+	}
+}
+@media (max-width: 693px) {
+	#iphoneWork {
+		 margin: 34px 0 0 152px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 74px;
+	}
+	#web-work {
+		 margin: 324px 0 0 4px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -182px;
+	}
+}
+@media (max-width: 691px) {
+	#iphoneWork {
+		 margin: 34px 0 0 151px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 73px;
+	}
+	#web-work {
+		 margin: 324px 0 0 3px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -183px;
+	}
+}
+@media (max-width: 689px) {
+	#iphoneWork {
+		 margin: 34px 0 0 150px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 72px;
+	}
+	#web-work {
+		 margin: 324px 0 0 2px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -184px;
+	}
+}
+@media (max-width: 687px) {
+	#iphoneWork {
+		 margin: 34px 0 0 149px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 71px;
+	}
+	#web-work {
+		 margin: 324px 0 0 1px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -185px;
+	}
+}
+@media (max-width: 685px) {
+	#iphoneWork {
+		 margin: 34px 0 0 148px;
+	}
+	.ribbon-wrapper-iphone {
+		 margin: 14px 0 0 70px;
+	}
+	#web-work {
+		 margin: 324px 0 0 0px;
+	}
+	.ribbon-wrapper-computer {
+		 margin: 283px 0 0 -186px;
+	}
+}
+@media (max-width: 683px) {
+	/* Home */
+
+	#home {
+		height: 546px;
+	}
+
+	#about {
+		padding-top: 0px;
+	}
+
+	/* Developer & Designer */
+
+	#bodyDeveloper {
+		position: relative;
+	}
+
+	#developerWrapper {
+		background: none;
+		height: 661px;
+		margin-top: 83px;
+	}
+
+	#web-work {
+		margin: 0 auto;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: 522px;
+		background:white;
+		overflow: auto;
+	}
+
+	#web-work h1 {
+		display: inherit;
+		/*color: #7efa73; */
+		color: #C70455;
+		font-family: Arial;
+		font-size: 2em;
+		text-shadow: 0 1px 1px #000; /*#410573; */ 
+		text-transform: none;
+		margin: 0 0 6px 0;
+	}
+
+	.menu {
+		margin: 0;
+		text-align: center;
+	}
+
+	.menu li {
+		display: inline-block;
+	}
+
+	.menu li a {
+		/* Hide the links at the top of each website screenshot*/
+		/*display: none;*/
+		height: 100%;
+		width: 100%;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.websiteBoxes {
+		-webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,.3);
+		box-shadow: 0 1px 2px 1px rgba(0,0,0,.3);
+	}
+
+	#firstDemoSite {
+		background: url(../images/sdilSmall.jpg) no-repeat;
+		background-size: 100%;
+		max-width: 386px;
+		height: 250px;
+		width: 386px;
+		margin: 10px 0 0 0;
+	}
+
+	#secondDemoSite {
+		background: url(../images/odysseySmall.jpg) no-repeat;
+		background-size: 100%;
+		max-width: 386px;
+		height: 250px;
+		width: 386px;
+		/* Put margin here on bottom because it won't show the bottom
+		shadow if there isn't one as it is last in the list*/
+		margin: 10px 0 5px 0;
+	}
+
+	#thirdDemoSite {
+		background: url(../images/robinAntalekDemoSmall.jpg) no-repeat;
+		background-size: 100%;
+		max-width: 374px;
+		height: 236px;
+		width: 374px;
+		margin: 8px 0 0 0;		
+	}
+
+	#iphoneWork {
+		 margin: 29px auto 0 auto;
+		 background: white;
+		 display: block;
+		 position: relative;
+		 width: 100%;
+		 height: 0px;
+	}
+
+	#iphoneWork h1 {
+		display: inherit;
+		color: #C70455;
+		font-family: Arial;
+		font-size: 2em;
+		text-shadow: 0 1px 1px #000;
+		text-transform: none;
+	}
+
+	#smirkusapp-discription {
+		background: url(../images/smirkusAppbg.jpg) no-repeat;
+		background-size: 100%;
+		margin: 71px auto 0 -160px;
+		left: 50%;
+		width: 320px;
+		position: absolute;
+		display: inline-block;
+		height: 427px;
+		max-height: 482px;
+		display: none;
+	}
+
+	#fitinSmirkusApp {
+		margin: 45% 0 0 1.3%;
+		overflow: auto;
+		height: 63%;
+	}
+
+	#fitinSmirkusApp span, #fitinSmirkusApp p {
+		max-width: 312px;
+		margin: 0px;
+		float: left;
+	}
+
+	#cowduckapp-discription {
+		background: url(../images/cowDuckbg.jpg) no-repeat;
+		background-size: 100%;
+		margin: 71px auto 0 -160px;
+		left: 50%;
+		width: 320px;
+		position: absolute;
+		height: 427px;
+		max-height: 482px;
+		display: inline-block;
+		display: none;
+	}
+
+	#fitinCowDuckApp {
+		margin: 71px 0 0 10px;
+		overflow: auto;
+		height: 350px;
+		max-width: 312px;
+	}
+
+	#fitinCowDuckApp span #fitinCowDuckApp p {
+		max-width: 312px;
+		margin: 0px;
+		float: left;
+	}
+
+	#clock {
+		margin: 76px 0 0 -341.5px;
+		left: 50%;
+		width: 100%;
+		z-index: 2;
+		transform: none;
+		-webkit-transform: none;
+		display: none;
+	}
+
+	#smirkus-app {
+		background: url(../images/smirkusIconSmall.png) no-repeat;
+		background-size: 100%;
+		height: 60px;
+		margin: 10px 0 0 0;
+		display: inline-block;
+		position: static;
+		z-index: 4;
+	}
+
+	#cowDuck {
+		background: url(../images/cowduckIconSmall.png) no-repeat;
+		background-size: 100%;
+		height: 60px;
+		margin: 10px 0 0 2%;
+		display: inline-block;
+		position: static;
+		z-index: 4;
+	}
+
+	.ribbon-wrapper-iphone {
+		display: none;
+	}
+	.ribbon-wrapper-computer {
+		 display: none;
+	}
+
+	.socialBar {
+		position: static;
+	}
+
+	.socialButtons {
+		background: #320145;
+	}
+}
+
+/*@media (max-width: 683px) {*/
+	/* Home */
+	/*#home article {*/
+		/*width: 100%;*/
+	/*}*/
+
+	/*#about {*/
+		/*position: static;*/
+		/*padding-top: 0px;*/
+	/*}*/
+
+	/*#about article {*/
+		/*height: 100%;*/
+		/*position: inherit;*/
+	/*}*/
+/*}*/
+
+@media (max-width: 666px) {
+	#home {
+		height: 523px;
+	}
+}
+
+@media (max-width: 607px) {
+	/* Home */
+	#home  {
+		height: 465px;
+	}
+
+	#home article {
+		top: 161px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 548px) {
+	#home {
+		height: 443px;
+	}
+}
+
+@media (max-width: 492px) {
+	#home {
+		height: 421px;
+	}
+}
+
+@media (max-width: 435px) {
+	#home {
+		height: 399px;
+	}
+
+	#home article {
+		top: 110px;
+	}
+}
+
+@media (max-width: 405px) {
+	#home {
+		height: 377px;
+	}
+}
+
+@media (max-width: 356px) {
+
+	#logo {
+		font-size: 2em;
+	}
+
+	#home {
+		height: 356px;
+	}
+
+	#home article {
+		top: 96px;
+	}
+}
+
+@media (max-width: 329px) {
+	#home {
+		height: 333px;
+	}
+
+	#home article {
+		top: 76px;
+	}
+}
+
+@media (max-width: 321px) {
+
+	#logo {
+		font-size: 2em;
+		margin: 23.5px 0 0 7px;
+	}
+
+	#home {
+		height: 342px;
+	}
+
+	#home article {
+		font-size: 16px;
+		top: 108px;
+	}
+
+	#about article {
+		height: 371px;
+		font-size: 16px;
+	}
+
+	.resumeLinks {
+		margin-top: 35px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+	font-size: 39px;
+	font-weight: normal;
+	margin: 0;
+	font-family: AvenirNext-DemiBold;;
+	text-transform: uppercase;
+	color: #C70455;
+	text-shadow: 0 2px 1px #000;
+}
+
+h2 {
+	font-size: 150px;
+	font-weight: normal;
+	margin: 0;
+	color: #FFB000;
+	padding: 60px;
+	text-shadow: 0 2px 1px #000;
+	font-family: 'Luckiest Guy',Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,Gadget,sans-serif;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0;
+	color: #FFB000;
+	text-shadow: 0 2px 1px #000;
+	font-family: 'Luckiest Guy',Impact,Haettenschweiler,"Franklin Gothic Bold",Charcoal,Gadget,sans-serif;
+	text-transform: uppercase;	
+}
+
+/*p {	width: 80%; margin: 20px auto; text-shadow: 0 2px 1px #000; color: #C5C3DE; }*/
+
+/*p {*/
+/*	color: #0DA4B5;
+	text-shadow:0 2px 1px #000;
+	width: 100%;
+}*/
+/*a, a:visited { color: #D92B00; font-weight: bold; font-style: italic; }*/
+ul { list-style: none; }
+
+figcaption { text-shadow: 0 2px 1px #000; color: #C5C3DE; }
+
+.download { padding: 10px; }
+
+pre { font-size: 15px; }
+code { font-style: normal; }
+blockquote {
+	text-align: left;
+	width: 720px;
+	margin: 10px auto;
+	background: #C5C3DE;
+	border: solid 2px #69697A;
+	padding: 0 40px;
+}
+
+#console {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 15px;
+	width: 500px;
+	margin: 0;
+	font-size: 14px;
+	font-style: italic;
+	background-color: #69697A;
+	text-shadow: none;
+	text-align: left;
+	padding: 3px 10px;
+	border-radius: 0 0 10px 10px;
+	z-index: 99;
+	opacity: .8;
+}
+
+#title {
+	overflow: hidden;
+	font-size: 180px;
+	margin: 0 auto -580px;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	padding-top: 30px;
+	z-index: 99;
+}
+
+.title-line { position: relative; display: block; margin: auto; width: 300%; left: -100%; }
+#title-line2 { top: -60px; }
+#title-line3 { top: -120px; }
+.title-line span { display: inline-block; line-height: 1.1; position: relative; }
+.twitter-follow-button { position: relative; top: 8px; left: 4px; }
+#title-info { position: relative; z-index:99998; margin-top: 40px; opacity: 0; }
+
+.credit {
+	font-size: 20px;
+	margin: 10px auto;
+	text-align: center;
+	font-style: italic;
+	color: #D92B00;
+	z-index:100;
+}
+
+#download {
+	position: relative;
+	margin: 50px auto;
+	font-size: 18px;
+	width: 100%;
+	line-height: 1.8;
+	z-index: 99999;
+}
+#hire { margin-bottom: 80px; }
+
+#download a { color: #69697A; }
+
+#examples-1 { overflow: hidden; }
+#fly-it { position: relative; }
+#scale-it { width: 500%; margin: 0px -200%; padding: 0; }
+
+#examples-pin { position: relative; width: 100%; height: 600px; overflow: hidden; margin-bottom: -200px; }
+.pin-frame { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+.pin-frame h2 { margin-top: 120px; }
+#pin-frame-slide { background: #D92B00; margin-left:-100%; }
+#pin-frame-wipe  { background: #FFB000; top:100%; }
+#pin-frame-wipe h2  { color: #D92B00; }
+#pin-frame-bounce  { background: #222438; }
+#pin-frame-color  { background: #222438; }
+#pin-frame-unpin  { top:100%; }
+
+#examples-2 { z-index: 9999; width: 100%; height: 100%; overflow: hidden; }
+#fling-it, #move-it { position: relative; }
+#examples-parallax {
+	padding-top: 200px;
+	height: 800px;
+	margin-bottom: -600px;
+	overflow: hidden;
+}
+#parallax-it {
+	padding: 0;
+	font-size: 80px;
+	position: relative;
+	width: 100%;
+	/*height: 800px;*/
+}
+
+#parallax-it-left {
+	position: relative;
+	font-size: 120px;
+	left: -160px;
+	color: #C5C3DE;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+	overflow: hidden;
+	width: 100%;
+}
+
+#parallax-it-right {
+	position: relative;
+	font-size: 160px;
+	left: 80px;
+	color: #C5C3DE;
+	opacity: 0.25;
+	-moz-opacity: 0.25;
+	filter:alpha(opacity=2.5);
+	overflow: hidden;
+	width: 900px;
+}
+
+#showcase { padding: 130px 0; }
+
+#howtouse { padding-top: 200px; }
+
+.divider { font-size: 14px; padding-top: 20px; }
+
+.disclaimer {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 auto;
+}
+
+#instructions { padding-top: 40px; }
+
+#instructions p { margin: 0px auto 20px; }
+
+#instructions-animation { padding-top: 40px; }
+
+#instructions .documentation {
+	font-size: 16px;
+	text-align: left;
+	width: 720px;
+	margin: 10px auto 30px;
+	padding: 20px 40px;
+	text-shadow: none;
+	border: solid 1px #69697A;
+	color:#C5C3DE;
+}
+
+#instructions .param-list {
+	font-size: 18px;
+	line-height: 1.4;
+	padding: 0 18px;
+	margin: 1em 0 0;
+}
+
+#instructions .param-list-sub {
+	padding-left: 36px;
+	font-size: 15px;
+}
+
+#instructions .param-list li {
+	font-weight: normal;
+	padding-bottom: 20px;
+	text-shadow: 0 2px 1px #000;
+}
+.param {
+	font-style:italic;
+}
+
+.param-list small {
+	display: block;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#credits { padding: 80px 0; }
+
+/* mobile demo */
+
+.mobile-demo #fade-it {
+	margin: 400px 0 500px 0;
+}
+.mobile-demo #examples-1 {
+	margin-bottom: 200px;
+}
+.mobile-demo #instructions {
+	width: 800px;
+	text-align: left;
+	margin: auto;
+}
+.mobile-demo ul {
+	list-style: disc;
+	color:#FFFFFF;
+	margin: 20px 80px 100px 80px;
+}
+.mobile-demo #content-wrapper {
+	margin-bottom: 100px;
+	width: 100%;
+}
+.mobile-demo h2 {
+	width: 90%;
+}
+.mobile-demo h3 {
+	color:#C5C3DE;
+}

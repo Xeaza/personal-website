@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>Taylor Wright-Sanson • Web/iOS Developer/Designer • </title>
+
+	<meta name="description" content="I am passionate about creating things that work well and look beautiful. I develop and design iOS apps as well as websites and I'm always looking to learn more." />
+    <meta name="keywords" content="Taylor, Wright, Sanson, taylor wright sanson, develop, developer, design, designer, iOS, website, UX, UI" />
+	<meta name="author" content="Taylor Wright-Sanson">
+	
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">	
+	<link rel="author" href="https://taylorwrightsanson.com"/>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- This needs to be there so that the site works on retina mobile devices -->
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+</head>
+
+<body id="bodyDeveloper">
+	<nav>
+		<!-- This line menu is hidden until the screen is small enough -->
+		<div id="lineMenu"><a href="#">☰</a></div>
+		<div id="logo"><a href="index.html">
+			<!-- Each letter is a different weight, hence the elements created for styling them -->
+			<ta>TA</ta><y>Y</y><l>L</l><o>O</o><r>R</r> wrig<em>h</em>t-sanson</a>
+		</div>
+		<ul id="hiddingMenu">
+			<img src="images/star.svg" class="starIcons">
+			<li><a href="developer+designer.html">developer & des<em>i</em>gne<em>r</em></a></li>
+			<img src="images/star.svg" class="starIcons">
+			<li><a href="circus+performer-inprogress.html">circus p<em>e</em>rformer</a></li>
+			<img src="images/star.svg" class="starIcons">
+			<li><a href="artist-inprogress.html">artist</a></li>
+			<img src="images/star.svg" class="starIcons">
+			<li><a href="you-name-it-inprogress.html">you na<em>me</em> it</a></li>
+		</ul>
+	</nav>
+	
+	<div id="developerWrapper">
+		<!-- This ribbon disapears after 4 seconds -->
+		<div class="ribbon-wrapper-computer">
+   			<div class="ribbon-computer">WEB WORK</div>
+   		</div>
+		<div id="web-work" class="background1">
+			<h1>WEBSITES</h1>
+			<ul class="menu">
+				<li id="firstDemoSite" class="websiteBoxes"><a href="javascript:firstDemoSite();" class="selected">Spacial Dynamics</a></li>
+				<li id="secondDemoSite" class="websiteBoxes"><a href="javascript:secondDemoSite();">Henry Guides</a></li>
+				<!-- <li id="thirdDemoSite" class="websiteBoxes"><a href="javascript:thirdDemoSite();">Robin Antalek</a></li> -->
+			</ul>
+		</div>
+
+		<!-- This ribbon disapears after 4 seconds -->
+   		<div class="ribbon-wrapper-iphone">
+   				<div class="ribbon-iphone">iOS APPS</div>
+   			</div>
+		<div id="iphoneWork">
+			<h1>iOS APPS</h1>
+			<div id="clock"></div>
+			<div id="smirkusapp-discription">
+				<div id="fitinSmirkusApp">
+					<span>I created this app because I love Circus Smirkus and I wanted to learn how to develop iPhone/iPad apps. What better way to learn then a project for an amazing not for profit company. That was v0.1. v1.0 was done as my Capstone at Wheaton College (MA). Currently, with over 2,000 downloads the app is at v1.2 with v1.3 on the way. I use technologies such as geolocation to give users directions from their current location to whatever show site they would like to go to. Using REST I gather data from Smirkus’ Facebook and Youtube channels to get news and videos to keep my users up-to-date with the latest Smirkus Info. You can even buy your tickets to a show.</span> 
+					<p>Visit <a href="http://www.appstore.com/circussmirkus" target="_blank">appstore.com/circussmirkus </a>for your free download of this app for iPhone or iPad. Once you’ve downloaded it, don’t forget to check out when Circus Smirkus will be in a town near you. </p>
+				</div>
+			</div>
+
+			<div id="cowduckapp-discription">
+				<div id="fitinCowDuckApp">
+					<p>cowDuck is an app available for the iPhone. Working in a team of four I was responsible for the overall UI as well as food section of the app. cowDuck was created for the Wheaton College (MA) community as a resource for the most essential things for students on campus. The app features a campus map and student/teacher directory, a course catalogue, all up-to-date campus dining hall and on campus cafe menus. Transportation timetables and campus events.</p>
+					<img src="images/cowduck.jpg" class="cowduckImage">
+					<p>I have a cron job running on a server that periodically scrubs the campus dining website for the most current menu data. Using REST the app talks to that server to make sure it always has the most current and up-to-date menu information for breakfast, lunch or dinner.</p>
+					<p>You can download the free app here:<a href="http://www.appstore.com/cowduck" target="_blank"> appstore.com/cowduck</a> </p>
+					<div id="cowduckImage"></div>
+					<br>
+				</div>
+			</div>
+			<!-- These are over the app icons to display each app when
+			clicked. -->
+			<a href="#" onclick="showapp(1, 'smirkusapp-discription'); return false;"><div id="smirkus-app"></div></a>
+			<a href="#" onclick="showapp(1, 'cowduckapp-discription'); return false"><div id="cowDuck"></div></a>
+			<!-- This is over the iPhone homebutton that hides each app
+			when clicked -->
+			<a href="#" onClick="hideAppDiscription(-99, 'smirkusapp-discription', 'cowduckapp-discription'); return false;" id="iPhone-home-button"></a>
+		</div>
+	</div>
+
+	<div class="socialBar">
+		<ul class="socialButtons">
+			<!-- Open each link in new tab -->
+			<li><a class="linkedinIcon" href="http://www.linkedin.com/pub/taylor-wright-sanson/29/253/834/" target="_blank" alt="Connect with me on LinkedIn"></a></li>
+			<li><a class="twitterIcon" href="https://twitter.com/TWrightSanson" target="_blank" alt="Follow me on Twitter"></a></li>
+			<li><a class="instagramIcon" href="http://instagram.com/taylorwrightsanson" target="_blank" alt="Follow me on Instagram"></a></li>
+			<li><a class="mailIcon" href="mailto:taylorwrightsanson@gmail.com" alt=""></a></li>
+			<li><a class="resumeIcon" href="/images/Wright-Sanson%20Taylor%20Resume.pdf" alt="My Resume" target="_blank"></a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+  	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+  	<!-- Script for parallax, pinning and other effects -->
+	<script src="js/jquery.superscrollorama.js"></script>
+	<!-- Any scripts I wrote for the site -->
+	<script src="js/scripts.js"></script>
+
+
+
+</body>
+</html>

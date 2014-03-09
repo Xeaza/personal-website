@@ -1,0 +1,8 @@
+
+body {
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+.videos {
+ 	max-width: 50px;
+    display:block;
+}
